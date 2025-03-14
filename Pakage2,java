@@ -1,0 +1,39 @@
+package com.example.kallalkoti
+
+import android.os.Bundle
+import android.provider.Telephony.Mms.Intents
+import android.widget.Button
+import android.widget.EditText
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class MainActivity : AppCompatActivity() {
+
+
+    private  lateinit var edi1:EditText
+    private  lateinit var edi2:EditText
+    private  lateinit var edi3:EditText
+    private  lateinit var bet:Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+
+        edi1 = findViewById(R.id.mytextlog1)
+        edi2 = findViewById(R.id.mytextlog2)
+        edi3 = findViewById(R.id.mytextlog3)
+        bet = findViewById(R.id.mytext1)
+
+        botton.setOnClickListener{
+            val email :string = edi1.text.toString().trim()
+            val link :string = edi2.text.toString().trim()
+            val git :string = edi3.text.toString().trim()
+
+
+        }
+
+    }
+}
